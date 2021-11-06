@@ -102,13 +102,16 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm@1.4-service.clearkey
 
+PRODUCT_VENDOR_PROPERTIES += \
+    drm.service.enabled=true
+
 # Dynamic Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
-PRODUCT_VENDOR_PROPERTIES += \
-    drm.service.enabled=true
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
 
 # Factory Reset Protection
 PRODUCT_VENDOR_PROPERTIES += \
