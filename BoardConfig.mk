@@ -60,6 +60,7 @@ KERNEL_CUSTOM_LLVM := true
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := cheeseburger,OnePlus5,oneplus5
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Partitions
 BOARD_USES_METADATA_PARTITION := true
