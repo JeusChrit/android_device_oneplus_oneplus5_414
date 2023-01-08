@@ -14,6 +14,5 @@
 
 runtime_resource_overlay {
     name: "AOSPAOnePlus5Frameworks",
-    sdk_version: "current",
     system_ext_specific: true,
 }
