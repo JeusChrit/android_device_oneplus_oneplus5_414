@@ -34,6 +34,9 @@ TARGET_SCREEN_DENSITY := 420
 # Gestures
 TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 
+# Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # HIDL
 DEVICE_MANIFEST_FILE += \
     $(PLATFORM_PATH)/configs/vintf/manifest.xml \
@@ -80,6 +83,9 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/init/fstab.qcom
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_M4DEFS += \
+    sysfs_battery_supply=vendor_sysfs_battery_supply \
+    sysfs_usb_supply=vendor_sysfs_usb_supply
 
 # Symlinks
 BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/persist:/persist

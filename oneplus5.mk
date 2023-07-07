@@ -159,10 +159,13 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0.vendor
 
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_msm8998
+
+#Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # Media
 PRODUCT_PACKAGES += \
