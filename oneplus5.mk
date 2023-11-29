@@ -231,7 +231,8 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     OnePlus5SeriesFrameworks \
     OnePlus5Settings \
-    WifiResTarget
+    WifiResTarget \
+    WifiResTargetMainline
 
 # Perf
 PRODUCT_COPY_FILES += \
