@@ -7,6 +7,3 @@ vendor.oneplus.camera.CameraHIDL::IOnePlusCameraProvider		u:object_r:hal_cameraH
 
 # Oneplus Fingerprint
 vendor.oneplus.fingerprint.extension::IVendorFingerprintExtensions	u:object_r:hal_fingerprint_hwservice:s0
-
-# QSPM
-vendor.qti.qspmhal::IQspmhal                         			u:object_r:hal_qspmhal_hwservice:s0
